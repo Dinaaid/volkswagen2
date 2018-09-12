@@ -1,0 +1,98 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    background-image: url("../assets/background-volkswagen.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+header{
+    text-align: center;
+}
+.nav{
+    height:40px ;
+    background-color: gray;
+    text-align: center;
+    
+}
+nav ul{
+    list-style-type: none;
+    padding-top: 10px;
+    text-align: center;
+    padding: 10px 0px 0px 10px;
+    
+    
+}
+
+nav ul li{
+    display: inline;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    background-color:gray;
+    padding: 10px;
+    margin: 0px 20px;
+
+}
+
+div{
+    height: 220px;
+    position: relative;
+    border-radius: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 40px 200px;
+
+}
+#image1{
+    background-image: url("../assets/volkswagen-1.jpg");
+}
+#image2{
+    background-image: url("../assets/image.jpg");
+}
+#image3{
+    background-image: url("../assets/image4.jpg");
+}
+#bus{
+    height: 300px;
+}
+#bus img{
+    width: 45%;
+    position: relative;
+    display: inline-block;
+
+    
+}
+.bus1 {
+    float: left; 
+    
+}
+bus2{
+    float:right;
+    
+}
+footer {
+    bottom: 0;
+    background-color: gray;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin: 0px 80px;
+    /* margin-top: 50px 50px 0px ; */
+    /* color: white;
+    background-color:grey;
+     text-align: center;
+    padding: 10px;
+    margin: 60px 70px 0px;
+    height: 20px; */
+}
+
+
