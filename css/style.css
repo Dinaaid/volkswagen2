@@ -13,6 +13,9 @@ body{
     background-attachment: fixed;
     text-align: center;
 }
+img{
+    padding-top: 10px;
+}
 nav ul{
     list-style-type: none;
     padding: 0px;
