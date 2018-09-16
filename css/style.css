@@ -13,48 +13,44 @@ body{
     background-attachment: fixed;
     text-align: center;
 }
-img{
-    margin: 20px ;
-
-}
-
 nav ul{
     list-style-type: none;
     padding: 0px;
     margin: 0px ;
-
+    background-color: gray;
 }
 nav{
     padding: 0px;
     margin-bottom:60px ;
-
-
-    
+    background-color: gray;
+    border-radius: 12px; 
+}
+nav::after{
+    content: "";
+    clear: both;
+    display: block;
 }
 nav a{
     text-decoration: none;
     text-align: center;
+    font-size: large;
     width: 25%;
     display: block;
     float: left;
     color: white;
     padding: 1% 0;
-    background-color: grey;
+    /* background-color: grey; */
     border-radius: 12px;
-
 }
 div {
     height: 220px;
     position: relative;
     border-radius: 12px;
-    background-image: url('assets/c10.jpg');
     background-size: cover;
     background-position: center;
     margin-top: 40px;
     cursor: pointer;
 }
-
-
 #image1{
     background-image: url("../assets/image.jpg");
 }
@@ -72,19 +68,57 @@ div {
     margin: 0px;
     border-radius: 12px;
     margin-bottom: 20px;
-    display: inline;   
+    display: block;   
 }
 .bus1{
     float: left;
 }
 .bus2{
-   
     float: right;
-  
 } 
+section{
+    color:black;
+    text-shadow: 2px 2px 5px white;
+    text-align: justify;
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+section:hover{
+    height: auto;
+}
 footer{
     clear: both;
     color: white;
     background-color: gray;
     margin-top: 50px ;
+    border-radius: 12px;
+}
+@media screen and (max-width:900px){
+    #bus{
+        text-align: center;
+        height: auto;
+    }
+    #bus img{
+        display: block;
+        margin-bottom: 20px;
+        margin: 0px;
+        margin-right: 0px;
+    }
+    .bus1{
+        float: initial;
+    }
+    .bus2{
+        float:inherit;
+    }
+}
+@media screen and (max-width:320px){
+    div{
+        height: 320;
+    }
 }
