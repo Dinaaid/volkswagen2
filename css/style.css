@@ -1,8 +1,14 @@
-html,body{
+* {
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+}
+html,body {
     height: 100%;
     margin: 0;
 }
-body{
+
+body {
     max-width: 900px;
     margin: 0 auto;
     padding: 0;
@@ -13,38 +19,50 @@ body{
     background-attachment: fixed;
     text-align: center;
 }
-img{
-    padding-top: 10px;
+
+header {
+    text-align: center;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px ;
     background-color: gray;
 }
-nav{
+
+nav {
     padding: 0px;
     margin-bottom:60px ;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.493);
     border-radius: 12px; 
 }
-nav::after{
+
+nav::after {
     content: "";
     clear: both;
     display: block;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     text-align: center;
     font-size: large;
     width: 25%;
-    display: block;
     float: left;
+    display: block;
     color: white;
     padding: 1% 0;
     /* background-color: grey; */
     border-radius: 12px;
 }
+
+a:hover {
+    color: black;
+    text-shadow: 2px 2px 3px white;
+    font-size: x-large;
+}
+
 div {
     height: 220px;
     position: relative;
@@ -54,17 +72,20 @@ div {
     margin-top: 40px;
     cursor: pointer;
 }
-#image1{
+
+#image1 {
     background-image: url("../assets/image.jpg");
 }
-#image2{
+
+#image2 {
     background-image: url("../assets/image4.jpg");
 }
-#image3{
+
+#image3 {
     background-image: url("../assets/volkswagen-1.jpg")
 }
 
-#bus img{
+#bus img {
     width: 45%;
     height: 430px;
     padding: 0px;
@@ -73,55 +94,76 @@ div {
     margin-bottom: 20px;
     display: block;   
 }
-.bus1{
+
+.bus1 {
     float: left;
 }
-.bus2{
+
+.bus2 {
     float: right;
-} 
-section{
+}
+
+section {
     color:black;
     text-shadow: 2px 2px 5px white;
     text-align: justify;
     position: absolute;
     bottom: 0px;
-    height: 60px;
+    height: 50px;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.781);
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 10px;
     margin: 0 auto;
     border-radius: 12px;
 }
-section:hover{
+
+section:hover {
     height: auto;
+    color: white;
+    text-shadow: none;
 }
-footer{
+
+section h2,p {
+    transition: none;
+}
+
+footer {
     clear: both;
     color: white;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.5);
     margin-top: 50px ;
     border-radius: 12px;
 }
-@media screen and (max-width:900px){
-    #bus{
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(8, 8, 8, 0.74);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:rgba(0, 0, 0, 0.466);
+    border-radius: 12px;
+}
+
+@media screen and (max-width:900px) {
+    #bus img {
         text-align: center;
         height: auto;
+        width: 100%;
     }
-    #bus img{
-        display: block;
-        margin-bottom: 20px;
-        margin: 0px;
-        margin-right: 0px;
-    }
-    .bus1{
-        float: initial;
-    }
-    .bus2{
-        float:inherit;
-    }
+
 }
-@media screen and (max-width:320px){
-    div{
-        height: 320;
+
+@media screen and (max-width:320px) {
+    div {
+        height: 320px;
     }
+
+    nav a {
+        width: 100%;
+    }
+    
 }
