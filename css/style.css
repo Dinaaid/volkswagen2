@@ -17,7 +17,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;
+    /* text-align: center; */
 }
 
 header {
@@ -53,7 +53,6 @@ nav a {
     display: block;
     color: white;
     padding: 1% 0;
-    /* background-color: grey; */
     border-radius: 12px;
 }
 
@@ -84,8 +83,13 @@ div {
 #image3 {
     background-image: url("../assets/volkswagen-1.jpg")
 }
-
-#bus img {
+#bus img{
+    border-radius: 12px;
+}
+#bus img:last-child{
+    float: right;
+}
+/* #bus img {
     width: 45%;
     height: 430px;
     padding: 0px;
@@ -101,7 +105,7 @@ div {
 
 .bus2 {
     float: right;
-}
+} */
 
 section {
     color:black;
@@ -166,4 +170,4 @@ footer {
         width: 100%;
     }
     
-}
+} 
