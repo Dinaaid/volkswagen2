@@ -83,12 +83,26 @@ div {
 #image3 {
     background-image: url("../assets/volkswagen-1.jpg")
 }
-#bus img{
-    border-radius: 12px;
+
+#bus {
+    height: auto;
 }
+
+#bus::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#bus img {
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
 #bus img:last-child{
     float: right;
 }
+
 /* #bus img {
     width: 45%;
     height: 430px;
@@ -135,8 +149,9 @@ footer {
     clear: both;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 50px ;
+    /* margin-top: 50px ; */
     border-radius: 12px;
+    text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -151,7 +166,49 @@ footer {
     background-color:rgba(0, 0, 0, 0.466);
     border-radius: 12px;
 }
+/* #topbutton {
+   
+    position:sticky;
+    top:90%;
+    color:white;
+    z-index: 7;
+    margin-right: 20px;
+    float: right;
+    margin-bottom: 20px; 
+    background-color: rgba(18, 62, 156, 0.466);
+    border: 0px;
+    border-radius: 6px;
+    padding: 5px 12px;
+    box-shadow: 2px 2px 5px white;
+    font-size: large;
+    cursor: pointer;
+}
 
+#topbutton:hover {
+    background-color: rgba(119, 141, 189, 0.466);
+    top: 88%;
+} */
+
+#topbutton {
+    position: sticky;
+    top: 90%;
+    z-index: 7;
+    background-color:gray;
+    margin-right: 20px;
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 7px;
+    float: right;
+    box-shadow: 0px 0px 4px white; 
+}
+
+#topbutton:hover {
+    background-color: black;
+    color: white;
+    top: 88%;
+
+}
 @media screen and (max-width:900px) {
     #bus img {
         text-align: center;
